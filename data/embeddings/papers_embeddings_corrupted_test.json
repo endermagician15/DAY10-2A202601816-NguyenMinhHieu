@@ -1,0 +1,168 @@
+{
+  "backend": "chroma",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "persist_path": "/Users/ducnv/Workspace/VinUni/Labwork/DAY10-2A202601842-NguyenTuanTruong/data/chroma",
+  "collection_name": "papers-embeddings-corrupted-test",
+  "documents": [
+    {
+      "record_id": "10.1000/paper6::0",
+      "paper_id": "10.1000/paper6",
+      "title": "Scholarly Paper Title Number 6",
+      "content": "Scholarly Paper Title Number 6. This is an academic summary description for paper number 6 discussing machine learning. [CORRUPTED NOISE: NULL_POINTER_SYS_ERR_9999] Authors: Author A6, Author B6. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper6",
+        "title": "Scholarly Paper Title Number 6",
+        "published": "2026-01-07",
+        "authors_joined": "Author A6, Author B6",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 6 discussing machine learning. [CORRUPTED NOISE: NULL_POINTER_SYS_ERR_9999]",
+        "abs_url": "https://doi.org/10.1000/paper6",
+        "pdf_url": "https://doi.org/10.1000/paper6.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper5::1",
+      "paper_id": "10.1000/paper5",
+      "title": "Scholarly Paper Title Number 5",
+      "content": "Scholarly Paper Title Number 5.  Authors: Author A5, Author B5. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper5",
+        "title": "Scholarly Paper Title Number 5",
+        "published": "2026-01-06",
+        "authors_joined": "Author A5, Author B5",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "",
+        "abs_url": "https://doi.org/10.1000/paper5",
+        "pdf_url": "https://doi.org/10.1000/paper5.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper4::2",
+      "paper_id": "10.1000/paper4",
+      "title": "Scholarly Paper Title Number 4",
+      "content": "Scholarly Paper Title Number 4. This is an academic summary description for paper number 4 discussing machine learning. Authors: Author A4, Author B4. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper4",
+        "title": "Scholarly Paper Title Number 4",
+        "published": "2026-01-05",
+        "authors_joined": "Author A4, Author B4",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 4 discussing machine learning.",
+        "abs_url": "https://doi.org/10.1000/paper4",
+        "pdf_url": "https://doi.org/10.1000/paper4.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper3::3",
+      "paper_id": "10.1000/paper3",
+      "title": "Scholarly Paper Title Number 3",
+      "content": "Scholarly Paper Title Number 3. This is an academic summary description for paper number 3 discussing machine learning. Authors: Author A3, Author B3. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper3",
+        "title": "Scholarly Paper Title Number 3",
+        "published": "2000-01-01",
+        "authors_joined": "Author A3, Author B3",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 3 discussing machine learning.",
+        "abs_url": "https://doi.org/10.1000/paper3",
+        "pdf_url": "https://doi.org/10.1000/paper3.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper2::4",
+      "paper_id": "10.1000/paper2",
+      "title": "Scholarly Paper Title Number 2",
+      "content": "Scholarly Paper Title Number 2. This is an academic summary description for paper number 2 discussing machine learning. Authors: Author A2, Author B2. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper2",
+        "title": "Scholarly Paper Title Number 2",
+        "published": "2026-01-03",
+        "authors_joined": "Author A2, Author B2",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 2 discussing machine learning.",
+        "abs_url": "https://doi.org/10.1000/paper2",
+        "pdf_url": "https://doi.org/10.1000/paper2.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper1::5",
+      "paper_id": "10.1000/paper1",
+      "title": "Scholarly Paper Title Number 1",
+      "content": "Scholarly Paper Title Number 1. This is an academic summary description for paper number 1 discussing machine learning. Authors: Author A1, Author B1. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper1",
+        "title": "Scholarly Paper Title Number 1",
+        "published": "2026-01-02",
+        "authors_joined": "Author A1, Author B1",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 1 discussing machine learning.",
+        "abs_url": "https://doi.org/10.1000/paper1",
+        "pdf_url": "https://doi.org/10.1000/paper1.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper9::6",
+      "paper_id": "10.1000/paper9",
+      "title": "Scholarly Pa...",
+      "content": "Scholarly Pa.... This is an academic summary description for paper number 9 discussing machine learning. Authors: Author A9, Author B9. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper9",
+        "title": "Scholarly Pa...",
+        "published": "2026-01-010",
+        "authors_joined": "Author A9, Author B9",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 9 discussing machine learning.",
+        "abs_url": "https://doi.org/10.1000/paper9",
+        "pdf_url": "https://doi.org/10.1000/paper9.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper0::7",
+      "paper_id": "10.1000/paper0",
+      "title": "Scholarly Paper Title Number 0",
+      "content": "Scholarly Paper Title Number 0. This is an academic summary description for paper number 0 discussing machine learning. Authors: Author A0, Author B0. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper0",
+        "title": "Scholarly Paper Title Number 0",
+        "published": "2026-01-01",
+        "authors_joined": "Author A0, Author B0",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 0 discussing machine learning.",
+        "abs_url": "https://doi.org/10.1000/paper0",
+        "pdf_url": "https://doi.org/10.1000/paper0.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper6::8",
+      "paper_id": "10.1000/paper6",
+      "title": "Scholarly Paper Title Number 6",
+      "content": "Scholarly Paper Title Number 6. This is an academic summary description for paper number 6 discussing machine learning. [CORRUPTED NOISE: NULL_POINTER_SYS_ERR_9999] Authors: Author A6, Author B6. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper6",
+        "title": "Scholarly Paper Title Number 6",
+        "published": "2026-01-07",
+        "authors_joined": "Author A6, Author B6",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "This is an academic summary description for paper number 6 discussing machine learning. [CORRUPTED NOISE: NULL_POINTER_SYS_ERR_9999]",
+        "abs_url": "https://doi.org/10.1000/paper6",
+        "pdf_url": "https://doi.org/10.1000/paper6.pdf"
+      }
+    },
+    {
+      "record_id": "10.1000/paper5::9",
+      "paper_id": "10.1000/paper5",
+      "title": "Scholarly Paper Title Number 5",
+      "content": "Scholarly Paper Title Number 5.  Authors: Author A5, Author B5. Categories: cs.AI, cs.LG.",
+      "metadata": {
+        "paper_id": "10.1000/paper5",
+        "title": "Scholarly Paper Title Number 5",
+        "published": "2026-01-06",
+        "authors_joined": "Author A5, Author B5",
+        "categories_joined": "cs.AI, cs.LG",
+        "summary": "",
+        "abs_url": "https://doi.org/10.1000/paper5",
+        "pdf_url": "https://doi.org/10.1000/paper5.pdf"
+      }
+    }
+  ]
+}
