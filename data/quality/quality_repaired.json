@@ -1,0 +1,33 @@
+{
+  "report_name": "quality_repaired",
+  "timestamp": "2026-08-06T08:31:56.181359+00:00",
+  "total_rows": 24,
+  "checks": [
+    {
+      "check": "row_count",
+      "passed": true,
+      "details": "Total rows: 24"
+    },
+    {
+      "check": "paper_id_valid",
+      "passed": true,
+      "details": "paper_id non-null and unique"
+    },
+    {
+      "check": "title_valid",
+      "passed": true,
+      "details": "title non-empty"
+    },
+    {
+      "check": "summary_valid",
+      "passed": true,
+      "details": "summary_chars > 0"
+    },
+    {
+      "check": "freshness",
+      "passed": true,
+      "details": "age_days <= 180"
+    }
+  ],
+  "passed": true
+}
