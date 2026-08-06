@@ -40,7 +40,7 @@ This interactive demo presents side-by-side evidence comparing RAG behavior acro
 
 ## 1. Overall Metrics Summary
 
-| Metric | Baseline | Corrupted | Repaired | $\Delta$ (Corrupted - Baseline) | Recovery |
+| Metric | Baseline | Corrupted | Repaired | $\\Delta$ (Corrupted - Baseline) | Recovery |
 | --- | ---: | ---: | ---: | ---: | --- |
 | `retrieval_hit_rate` | {b_hit:.4f} | {c_hit:.4f} | {r_hit:.4f} | {c_hit - b_hit:+.4f} | {"Recovered" if r_hit >= c_hit else "Partial"} |
 | `mean_token_f1` | {b_f1:.4f} | {c_f1:.4f} | {r_f1:.4f} | {c_f1 - b_f1:+.4f} | {"Recovered" if r_f1 >= c_f1 else "Partial"} |

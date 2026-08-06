@@ -113,7 +113,7 @@ def generate_corruption_report(
 
 ## 1. Metric Comparison Matrix
 
-| Metric / Signal | Baseline | Corrupted | Repaired | Corruption Impact ($\Delta$) | Recovery Status |
+| Metric / Signal | Baseline | Corrupted | Repaired | Corruption Impact ($\\Delta$) | Recovery Status |
 | --- | ---: | ---: | ---: | ---: | --- |
 | `retrieval_hit_rate` | {b_hit:.4f} | {c_hit:.4f} | {r_hit:.4f} | {hit_delta:+.4f} | {"Recovered" if r_hit >= c_hit else "Partial"} |
 | `mean_token_f1` | {b_f1:.4f} | {c_f1:.4f} | {r_f1:.4f} | {f1_delta:+.4f} | {"Recovered" if r_f1 >= c_f1 else "Partial"} |
