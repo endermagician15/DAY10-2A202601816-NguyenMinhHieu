@@ -137,7 +137,6 @@ uv run python -c "from core.config import load_settings; from ingestion.crossref
 1. **[Tầng Raw Ingestion (TV1)]**: Đã hoàn thành 100%. Đã thu thập 24 bản ghi bài báo học thuật chuẩn từ Crossref API, làm sạch JATS XML tags, lưu vết tại `data/raw/crossref_response.json` (238 KB) và `data/raw/crossref_records.json` (58 KB).
 2. **[Chuỗi tác động dự kiến]**: Khi TV4 làm lỗi dữ liệu (xóa bản ghi/null summary) → Quality checks phát hiện FAILED → `retrieval_hit_rate` giảm. Khi repair từ `data/raw/crossref_records.json` → Quality checks PASSED → Metrics phục hồi.
 
-
 ## 9. Điều học được và hướng cải thiện
 
 ### Ba điều quan trọng nhất
