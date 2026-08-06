@@ -6,8 +6,8 @@
 | ------------------ | -------------------------- |
 | Họ và tên       | Nguyễn Tuấn Trường |
 | MSSV               | 2A202601842 |
-| Khóa/Lớp         | K3 / K4 |
-| Tên nhóm         | Nhóm 2A |
+| Khóa/Lớp         | K4 |
+| Tên nhóm         | Nhóm A1 |
 | Vai trò chính    | TV1 — Source Owner (Data Ingestion) |
 | Repository         | https://github.com/tuantruong1607/DAY10-2A202601842-NguyenTuanTruong |
 | Ngày hoàn thành | 2026-08-06 |
@@ -125,17 +125,18 @@ uv run python -c "from core.config import load_settings; from ingestion.crossref
 
 | Metric/signal          | Baseline | Corrupted | Repaired | Nhận xét của cá nhân |
 | ---------------------- | -------: | --------: | -------: | ------------------------- |
-| `retrieval_hit_rate` |      1.0 |       0.0 |      1.0 | Khi data lỗi (rỗng summary/nhiễu text), retriever không tìm thấy doc chuẩn; sau khi repair từ raw thì khôi phục hoàn toàn |
-| `mean_token_f1`      |     0.85 |      0.15 |     0.85 | Chất lượng câu trả lời giảm mạnh do retrieval sai context |
-| `judge_accuracy`     |     0.90 |      0.10 |     0.90 | Đánh giá bởi LLM-as-a-judge phản ánh đúng sự sụt giảm chất lượng |
-| `mean_judge_score`   |     4.50 |      1.20 |     4.50 | Điểm chất lượng trung bình khôi phục sau repair |
-| Quality checks         |   PASSED |   FAILED  |   PASSED | Great Expectations phát hiện lỗi thiếu bản ghi và null summary |
-| Freshness status       |   PASSED |   FAILED  |   PASSED | Freshness report phát hiện các bài báo bị làm cũ ngày |
+| `retrieval_hit_rate` | [Đang chờ TV5] | [Đang chờ TV5] | [Đang chờ TV5] | Sẽ đo lường sau khi TV5 tích hợp và chạy `script/run_phase1.py` |
+| `mean_token_f1`      | [Đang chờ TV5] | [Đang chờ TV5] | [Đang chờ TV5] | Sẽ đo lường sau khi TV5 chạy RAG evaluation |
+| `judge_accuracy`     | [Đang chờ TV5] | [Đang chờ TV5] | [Đang chờ TV5] | Đánh giá bởi LLM-as-a-judge trên cùng bộ test set |
+| `mean_judge_score`   | [Đang chờ TV5] | [Đang chờ TV5] | [Đang chờ TV5] | Điểm chất lượng trung bình từ LLM judge |
+| Quality checks         |   [PASSED] | [Đang chờ TV4] | [Đang chờ TV5] | Đã verify thành công tầng Raw Ingestion (`data/raw/` sinh đủ 2 file artifact 24 bản ghi) |
+| Freshness status       |   [PASSED] | [Đang chờ TV4] | [Đang chờ TV5] | Data lấy từ Crossref trong khoảng 180 ngày qua |
 
 ### Kết luận từ số liệu
 
-1. **[Data corruption]** (bị xóa bản ghi, rỗng summary, nhiễu text) → **[quality signal FAILED]** → **[retrieval_hit_rate giảm từ 1.0 xuống 0.0]**.
-2. **[Repair action]** (chạy lại pipeline cleaning từ `data/raw/crossref_records.json`) → **[quality signal PASSED]** → **[agent metrics phục hồi 100%]**.
+1. **[Tầng Raw Ingestion (TV1)]**: Đã hoàn thành 100%. Đã thu thập 24 bản ghi bài báo học thuật chuẩn từ Crossref API, làm sạch JATS XML tags, lưu vết tại `data/raw/crossref_response.json` (238 KB) và `data/raw/crossref_records.json` (58 KB).
+2. **[Chuỗi tác động dự kiến]**: Khi TV4 làm lỗi dữ liệu (xóa bản ghi/null summary) → Quality checks phát hiện FAILED → `retrieval_hit_rate` giảm. Khi repair từ `data/raw/crossref_records.json` → Quality checks PASSED → Metrics phục hồi.
+
 
 ## 9. Điều học được và hướng cải thiện
 
