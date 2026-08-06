@@ -14,14 +14,32 @@
 ## 2. Data Quality & Freshness Breakdown
 
 ### Corrupted State Quality Checks
-- **Passed**: FAILED
+- **Passed**: FAILED (2/5 checks)
 - **Total Rows**: 24
 - **Freshness**: STALE (Stale Rows: 4)
 
+#### Individual Corrupted Quality Checks
+| Check Name | Status | Details |
+| --- | --- | --- |
+| `row_count` | PASSED | Total rows: 24 |
+| `paper_id_valid` | FAILED | paper_id non-null and unique |
+| `title_valid` | PASSED | title non-empty |
+| `summary_valid` | FAILED | summary_chars > 0 |
+| `freshness` | FAILED | age_days <= 180 |
+
 ### Repaired State Quality Checks
-- **Passed**: PASSED
+- **Passed**: PASSED (5/5 checks)
 - **Total Rows**: 24
 - **Freshness**: FRESH (Stale Rows: 0)
+
+#### Individual Repaired Quality Checks
+| Check Name | Status | Details |
+| --- | --- | --- |
+| `row_count` | PASSED | Total rows: 24 |
+| `paper_id_valid` | PASSED | paper_id non-null and unique |
+| `title_valid` | PASSED | title non-empty |
+| `summary_valid` | PASSED | summary_chars > 0 |
+| `freshness` | PASSED | age_days <= 180 |
 
 ## 3. Analysis & Key Insights
 1. **Corruption Impact**: Data degradation (dropping records, blanking summaries, injecting noise, altering dates) directly degrades quality checks and RAG retrieval hit rate.
