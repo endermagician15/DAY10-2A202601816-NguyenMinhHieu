@@ -6,20 +6,20 @@
 
 | Thông tin         | Nội dung                  |
 | ------------------ | -------------------------- |
-| Khóa/Lớp         | [K3 hoặc K4]              |
-| Tên nhóm         | [Tên hoặc mã nhóm]     |
-| Repository         | [Đường dẫn repository] |
-| Ngày hoàn thành | [YYYY-MM-DD]               |
+| Khóa/Lớp         | K4            |
+| Tên nhóm         | A1     |
+| Repository         | [Github](https://github.com/tuantruong1607/DAY10-2A202601842-NguyenTuanTruong) |
+| Ngày hoàn thành | 2026-08-06               |
 
 ### Thành viên và phân công
 
 | STT | Họ và tên | MSSV | Vai trò chính | Module/deliverable sở hữu |
 | --: | --- | --- | --- | --- |
-| 1 | [Họ tên] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 2 | [Họ tên] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 3 | [Họ tên] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 4 | [Nếu có] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
-| 5 | [Nếu có] | [MSSV] | [Vai trò] | [File, hàm hoặc artifact] |
+| 1 | Nguyễn Minh Hiếu | 2A202601816 | [Vai trò] | [File, hàm hoặc artifact] |
+| 2 | Nguyễn Văn Đức | 2A202601422 | [Vai trò] | [File, hàm hoặc artifact] |
+| 3 | Đào Hải Đăng | 2A202601814 | [Vai trò] | [File, hàm hoặc artifact] |
+| 4 | Nguyễn Tuấn Trường | 2A202601842 | [Vai trò] | [File, hàm hoặc artifact] |
+| 5 | Vũ Xuân Đức | 2A202601668 | [Vai trò] | [File, hàm hoặc artifact] |
 
 ## 2. Tóm tắt kết quả
 
