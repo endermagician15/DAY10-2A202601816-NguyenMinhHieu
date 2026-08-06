@@ -7,7 +7,7 @@
 | Họ và tên       | Nguyễn Tuấn Trường |
 | MSSV               | 2A202601842 |
 | Khóa/Lớp         | K4 |
-| Tên nhóm         | Nhóm A1 |
+| Tên nhóm         | A1 |
 | Vai trò chính    | TV1 — Source Owner (Data Ingestion) |
 | Repository         | https://github.com/tuantruong1607/DAY10-2A202601842-NguyenTuanTruong |
 | Ngày hoàn thành | 2026-08-06 |
