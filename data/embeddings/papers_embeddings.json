@@ -1,7 +1,7 @@
 {
   "backend": "chroma",
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
-  "persist_path": "D:\\DAY10-2A202601842-NguyenTuanTruong\\data\\chroma",
+  "persist_path": "E:\\vinuni\\DAY10-2A202601842-NguyenTuanTruong\\data\\chroma",
   "collection_name": "papers-baseline",
   "documents": [
     {
